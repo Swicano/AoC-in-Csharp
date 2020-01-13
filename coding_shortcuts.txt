@@ -1,0 +1,5 @@
+Shortcut list
+
+ctr+shift+N			new folder, 'enter' to open
+alt+d				edit address bar (windows explorer)
+'cmd'+enter			open command prompt at the folder location (type in address bar)
