@@ -1,0 +1,105 @@
+resources: https://www.youtube.com/watch?v=r5dtl9Uq9V0
+.NET core cli commands: https://docs.microsoft.com/en-us/dotnet/core/tools/?tabs=netcore2x#cli-commands
+
+
+0) .NET core SDK 3.1.100
+	The following were installed at: 'C:\Program Files\dotnet'
+    • .NET Core SDK 3.1.100
+    • .NET Core Runtime 3.1.0
+    • ASP.NET Core Runtime 3.1.0
+    • .NET Core Windows Desktop Runtime 3.1.0
+1) Vs Code
+	1a) C# 1.21.9
+	1b) python 2020.1.57204
+	1c) vscode-icons 9.7.0
+	1d) gitlens 10.2.0
+	1e) visual studio intellicode 1.2.2  (<-- only works with JS Java and python, but i installed it anyway)
+	1f) NuGet package manager 1.1.6
+	1g) Live Share 1.0.1456
+	
+2) getting started resource: https://docs.microsoft.com/en-us/dotnet/core/tools/?tabs=netcore2x#cli-commands
+  down at bottom there is some examples
+  
+  !! ctrl+` 				opens terminal
+  !! ctrl+shift+p			command palette	
+
+  in console ( go to folder you want, click address bar, type 'cmd'+enter opens command prompt at that folder)
+  2a) create new solution
+	> dotnet new sln -n "VSCodeIntroSln"
+  2b) create a new project template for a console project
+    > dotnet new console -n "IntroUI"
+      this creates a folder for the console project
+  2c) create a new class library
+    > dotnet new classlib -n "IntroLibrary"
+      this makes the folder for the library project
+  2d) link those projects TO the solution file
+    (if using bash can use glob)
+		>> dotnet sln VSCodeIntroSln.sln add **/*.csproj
+	else on windows
+	> dotnet sln VSCodeIntroSln.sln add ./IntroUI/IntroUI.csproj
+	> dotnet sln VSCodeIntroSln.sln add ./IntroLibrary/IntroLibrary.csproj
+	 repeat for each project
+  2e) want to say that UI references the Library
+    > dotnet add IntroUI/IntroUI.csproj reference IntroLibrary/IntroLibrary.csproj
+	
+	
+to work on the IntroUI project using console
+  > cd IntroUI
+  > Code .
+	launches VSCode at that folder location
+	
+  VS code asks to add a few items to make builds and debugging work, say yes
+  we launched it at the project level just to make those files
+  actually want to launch one level higher (soln level)
+  
+  
+  by default new files are blank, but you can use templates (more on that later)
+  
+How to run a program in VSCode:
+	option 1) cd into the folder in the terminal (ctrl+`)
+				then >dotnet run
+			doesn't catch breakpoints
+			
+	2) if you have launch.json and tasks.json, just hit F5, automatically builds and runs (runs introui.csproj, not sure what determines which project it runs)
+	
+
+
+Nuget:
+
+  couple ways
+  1) couuld use the terminal, 
+   > cd IntroLibrary
+   > dotnet add package Dapper   (go to NuGet website and find a package you want, aka 'Dapper')
+   this adds the newest version
+  2) open IntroUI.csproj and add "
+      <ItemGroup>
+		<PackageReference Include="Dapper" Version="2.0.4" />
+	  </ItemGroup>
+	  "
+	VSCode will notice the dependencies are unresolved and will prompt you top restore (or do >dotnet restore)
+  3) open command pallette (ctrl+shift+p)
+     type 'nuget' to get nuget package manager add-in running
+	 search for your package
+	 pick your version
+	 pick which project you want to add it to
+
+
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+  
+  
+	
+	
+	
+	
+	
+	
+	
+	
