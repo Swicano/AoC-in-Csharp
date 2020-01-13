@@ -86,8 +86,24 @@ Nuget:
 
 	 
 	 
-	 
-	 
+NOTES:
+		might need to change "console":"internalConsole" to "externalConsole" or "integratedTerminal" if you want to readLine in a console app
+		see: https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md#console-terminal-window
+            
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+
 	 
 	 
 	 

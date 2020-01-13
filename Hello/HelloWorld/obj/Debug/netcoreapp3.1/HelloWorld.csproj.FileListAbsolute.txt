@@ -1,0 +1,11 @@
+c:\Users\gabo\Documents\GitHub\AoC-in-Csharp\Hello\HelloWorld\bin\Debug\netcoreapp3.1\HelloWorld.exe
+C:\Users\gabo\Documents\GitHub\AoC-in-Csharp\Hello\HelloWorld\bin\Debug\netcoreapp3.1\HelloWorld.deps.json
+C:\Users\gabo\Documents\GitHub\AoC-in-Csharp\Hello\HelloWorld\bin\Debug\netcoreapp3.1\HelloWorld.runtimeconfig.json
+C:\Users\gabo\Documents\GitHub\AoC-in-Csharp\Hello\HelloWorld\bin\Debug\netcoreapp3.1\HelloWorld.runtimeconfig.dev.json
+c:\Users\gabo\Documents\GitHub\AoC-in-Csharp\Hello\HelloWorld\bin\Debug\netcoreapp3.1\HelloWorld.dll
+c:\Users\gabo\Documents\GitHub\AoC-in-Csharp\Hello\HelloWorld\bin\Debug\netcoreapp3.1\HelloWorld.pdb
+c:\Users\gabo\Documents\GitHub\AoC-in-Csharp\Hello\HelloWorld\obj\Debug\netcoreapp3.1\HelloWorld.csprojAssemblyReference.cache
+c:\Users\gabo\Documents\GitHub\AoC-in-Csharp\Hello\HelloWorld\obj\Debug\netcoreapp3.1\HelloWorld.AssemblyInfoInputs.cache
+c:\Users\gabo\Documents\GitHub\AoC-in-Csharp\Hello\HelloWorld\obj\Debug\netcoreapp3.1\HelloWorld.AssemblyInfo.cs
+c:\Users\gabo\Documents\GitHub\AoC-in-Csharp\Hello\HelloWorld\obj\Debug\netcoreapp3.1\HelloWorld.dll
+c:\Users\gabo\Documents\GitHub\AoC-in-Csharp\Hello\HelloWorld\obj\Debug\netcoreapp3.1\HelloWorld.pdb
